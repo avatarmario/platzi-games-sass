@@ -5,20 +5,26 @@
     padding-top: 15px;
     margin: 0 auto;
     justify-content: space-around; 
-    border-radius: 20px;
-    background-color: $color-claro;
-    color: $color-primario;
+    //border-radius: 20px; ***in mixin
+    //background-color: $color-claro; ***in mixin
+    //color: $color-primario; ***in mixin
+    @include caja;
     h3 {
         font-weight: 600;
         font-size: 20px;
         text-align: center;
-        text-transform: uppercase;
-        font-family: $Fuente2;
+        //code below replaced by @mixin titulos()
+        //text-transform: uppercase;
+        //font-family: $Fuente2;
+        @include titulos($Fuente2);
+
     }
     span {
         font-size: 12px;
         text-align: center;
-        text-transform: uppercase; 
-        font-family: $Fuente2;
+        //code below replaced by @mixin titulos()
+        //text-transform: uppercase; 
+        //font-family: $Fuente2;
+        @include titulos($Fuente2);
     }
 } 
