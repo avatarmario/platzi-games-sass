@@ -4,6 +4,10 @@ $color-primario: #333333;
 $color-claro:  #FFFFFF;
 $color-secundario: #8841DA;
 $color-variacion: #3f579a;
+// Dark Mode is ON if variable is set to TRUE
+$darkMode: true;
+
+
 
 @mixin caja {
     border-radius: 20px;
@@ -25,6 +29,15 @@ $color-variacion: #3f579a;
 @function get-opacity($color, $nivel ) {
     @return rgba($color, $nivel);
 }
+
+/* @function DarkMode($darkMode) {
+    @if $darkMode {
+        .perfil {
+            background-color: $color-claro;
+        }
+    }
+} */
+
 
 @each $header, $size in (h1: 30px, h2: 25px, h3: 20px){
     #{$header} {

@@ -1,3 +1,10 @@
+/* @function DarkMode($darkMode) {
+    @if $darkMode {
+        .perfil {
+            background-color: $color-claro;
+        }
+    }
+} */
 h1 {
   font-size: 30px;
   margin: 0;
@@ -32,7 +39,7 @@ main {
 }
 
 .perfil {
-  width: 50%;
+  width: 60%;
   padding-top: 50px;
   color: #FFFFFF;
   background-color: #8841DA;
@@ -169,4 +176,54 @@ main {
 }
 .galeria img {
   border-radius: 10px;
+}
+
+.articulos {
+  width: 40%;
+  padding: 50px 0 0 50px;
+}
+
+.articulo {
+  margin-bottom: 75px;
+  border-bottom: 3px solid #8841DA;
+}
+.articulo__categoria {
+  font-weight: 500;
+  font-size: 16px;
+  color: #8841DA;
+  font-family: "Oswald", sans-seriff;
+  text-transform: uppercase;
+}
+.articulo__titulo {
+  font-size: 20px;
+  font-family: "Oswald", sans-seriff;
+  text-transform: uppercase;
+}
+.articulo__descripcion {
+  margin-bottom: 30px;
+  padding-right: 100px;
+}
+
+.perfil {
+  background-color: #FFFFFF;
+}
+.perfil__nombre, .perfil__minibio h2 {
+  color: #8841DA;
+}
+.perfil__titulo, .perfil__minibio h3 {
+  color: rgba(63, 87, 154, 0.5);
+}
+.perfil__boton {
+  background-color: #333333;
+}
+
+.articulos {
+  background-color: #333333;
+}
+
+.articulo__titulo {
+  color: #FFFFFF;
+}
+.articulo__descripcion {
+  color: #FFFFFF;
 }

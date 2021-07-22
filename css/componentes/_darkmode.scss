@@ -1,0 +1,26 @@
+@if $darkMode {
+    .perfil {
+        background-color: $color-claro;
+        &__nombre {
+            color: $color-secundario;
+        }
+        &__titulo {
+            color: get-opacity($color-variacion, .50);
+
+        }
+        &__boton {
+            background-color: $color-primario;
+        }
+    }
+    .articulos{
+        background-color: $color-primario;
+    }
+    .articulo {
+        &__titulo {
+            color: $color-claro;
+        }
+        &__descripcion {
+            color: $color-claro;
+        }
+    }
+}
